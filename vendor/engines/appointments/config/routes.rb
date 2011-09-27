@@ -1,8 +1,8 @@
 ::Refinery::Application.routes.draw do
-  resources :appointments, :only => [:index, :show]
-
+  resources :appointments, :only => [:new, :create]
+  
   scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
-    resources :appointments, :except => :show do
+    resources :appointments do
       collection do
         post :update_positions
       end

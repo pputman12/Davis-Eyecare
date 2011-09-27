@@ -1,0 +1,73 @@
+<p>
+  Thank you for using our online appointment request form. Please complete the following form and press submit. Your request will be sent to our office. We will confirm your appointment via email or phone. If your appointment request is not confirmed do not assume that your request has been granted.
+</p>
+
+<%= form_for(@appointment) do |f| %>
+  <% if @appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
+
+      <ul>
+      <% @appointment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br />
+    <%= f.text_field :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :first_date %><br />
+    <%= f.datetime_select :first_date %>
+  </div>
+  <div class="field">
+    <%= f.label :second_date %><br />
+    <%= f.datetime_select :second_date %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label "reorder contacts" %><br />
+    <%= f.check_box :reordercontacts %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_name %><br />
+    <%= f.text_field :shipping_name %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_address %><br />
+    <%= f.text_field :shipping_address %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_phone %><br />
+    <%= f.text_field :shipping_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_email %><br />
+    <%= f.text_field :shipping_email %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
