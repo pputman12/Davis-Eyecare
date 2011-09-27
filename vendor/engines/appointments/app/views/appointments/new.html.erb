@@ -2,6 +2,14 @@
   Thank you for using our online appointment request form. Please complete the following form and press submit. Your request will be sent to our office. We will confirm your appointment via email or phone. If your appointment request is not confirmed do not assume that your request has been granted.
 </p>
 
+<%= link_to "Fill out our Medical Questionnaire online", "https://www.davisicare.net/medical-history-2011/medical_history2_2011.php"%>
+
+<%= link_to "Download our Medical History Questionnaire Here", "/system/resources/BAhbBlsHOgZmSSI+MjAxMS8wOS8yNy8xMi81Ny8zMi8yNTkvTWVkaWNhbF9IaXN0b3J5X1F1ZXN0aW9ubmFpcmUucGRmBjoGRVQ/Medical%20History%20Questionnaire.pdf"%>
+
+<%= link_to "Download our Insurance Information form", "/system/resources/BAhbBlsHOgZmSSI2MjAxMS8wOS8yNy8xMi81Ni80My8zMjcvaW5zdXJhbmNlX2luZm9ybWF0aW9uLnBkZgY6BkVU/insurance-information.pdf"%>
+
+
+
 <%= form_for(@appointment) do |f| %>
   <% if @appointment.errors.any? %>
     <div id="error_explanation">
