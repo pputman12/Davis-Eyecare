@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    appointments:
+      title: Appointments
+  admin:
+    appointments:
+      actions:
+        create_new: Maak een nieuwe Appointment
+        reorder: Wijzig de volgorde van de Appointments
+        reorder_done: Klaar met het wijzingen van de volgorde van de Appointments
+      records:
+        title: Appointments
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Appointments. Druk op 'Maak een nieuwe Appointment' om de eerste aan te maken.
+      appointment:
+        view_live_html: Bekijk deze appointment op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze appointment
+        delete: Verwijder deze appointment voor eeuwig
+  appointments:
+    show:
+      other: Andere Appointments

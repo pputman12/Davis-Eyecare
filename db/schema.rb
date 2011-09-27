@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110927015019) do
+ActiveRecord::Schema.define(:version => 20110927210945) do
+
+  create_table "appointments", :force => true do |t|
+    t.string   "name"
+    t.string   "phone_number"
+    t.string   "email"
+    t.string   "reason"
+    t.datetime "first_date"
+    t.datetime "second_date"
+    t.text     "comments"
+    t.boolean  "reordercontacts"
+    t.string   "shipping_name"
+    t.string   "shipping_address"
+    t.string   "shipping_phone"
+    t.string   "shipping_email"
+    t.integer  "quantity"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appointments", ["id"], :name => "index_appointments_on_id"
 
   create_table "images", :force => true do |t|
     t.string    "image_mime_type"

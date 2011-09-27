@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    appointments:
+      title: Appointments
+  admin:
+    appointments:
+      actions:
+        create_new: CREATE NEW Appointment
+        reorder: REORDR Appointments
+        reorder_done: DUN REORDERIN Appointments
+      records:
+        title: Appointments
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Appointments YET. CLICK "CREATE NEW Appointment" 2 ADD UR FURST appointment.
+      appointment:
+        view_live_html: VIEW DIS appointment LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS appointment
+        delete: REMOOV DIS appointment FOREVR
+  appointments:
+    show:
+      other: OTHR Appointments

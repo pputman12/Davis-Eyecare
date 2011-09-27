@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-appointments (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -172,5 +177,6 @@ PLATFORMS
 DEPENDENCIES
   fog
   refinerycms (~> 1.0.8)
+  refinerycms-appointments (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   sqlite3

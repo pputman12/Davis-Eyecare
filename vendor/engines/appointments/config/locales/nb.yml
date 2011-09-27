@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    appointments:
+      title: Appointments
+  admin:
+    appointments:
+      actions:
+        create_new: Lag en ny Appointment
+        reorder: Endre rekkefølgen på Appointments
+        reorder_done: Ferdig å endre rekkefølgen Appointments
+      records:
+        title: Appointments
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Appointments enda. Klikk på "Lag en ny Appointment" for å legge til din første appointment.
+      appointment:
+        view_live_html: Vis hvordan denne appointment ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne appointment
+        delete: Fjern denne appointment permanent
+  appointments:
+    show:
+      other: Andre Appointments

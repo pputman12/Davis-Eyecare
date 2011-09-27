@@ -58,3 +58,5 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 gem 'fog'
 # END USER DEFINED
+
+gem 'refinerycms-appointments', '1.0', :path => 'vendor/engines'

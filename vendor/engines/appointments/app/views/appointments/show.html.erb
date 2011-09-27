@@ -1,0 +1,99 @@
+<% content_for :body_content_title do %>
+  <%= @appointment.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @appointment.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone Number</h1>
+    <p>
+      <%=raw @appointment.phone_number %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @appointment.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Reason</h1>
+    <p>
+      <%=raw @appointment.reason %>
+    </p>
+  </section>
+  <section>
+    <h1>First Date</h1>
+    <p>
+      <%=raw @appointment.first_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Second Date</h1>
+    <p>
+      <%=raw @appointment.second_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Comments</h1>
+    <p>
+      <%=raw @appointment.comments %>
+    </p>
+  </section>
+  <section>
+    <h1>Reordercontacts</h1>
+    <p>
+      <%=raw @appointment.reordercontacts %>
+    </p>
+  </section>
+  <section>
+    <h1>Shipping Name</h1>
+    <p>
+      <%=raw @appointment.shipping_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Shipping Address</h1>
+    <p>
+      <%=raw @appointment.shipping_address %>
+    </p>
+  </section>
+  <section>
+    <h1>Shipping Phone</h1>
+    <p>
+      <%=raw @appointment.shipping_phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Shipping Email</h1>
+    <p>
+      <%=raw @appointment.shipping_email %>
+    </p>
+  </section>
+  <section>
+    <h1>Quantity</h1>
+    <p>
+      <%=raw @appointment.quantity %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="appointments">
+      <% @appointments.each do |appointment| %>
+        <li>
+          <%= link_to appointment.name, appointment_path(appointment) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

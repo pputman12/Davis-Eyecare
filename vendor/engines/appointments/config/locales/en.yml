@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    appointments:
+      title: Appointments
+  admin:
+    appointments:
+      actions:
+        create_new: Add New Appointment
+        reorder: Reorder Appointments
+        reorder_done: Done Reordering Appointments
+      records:
+        title: Appointments
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Appointments yet. Click "Add New Appointment" to add your first appointment.
+      appointment:
+        view_live_html: View this appointment live <br/><em>(opens in a new window)</em>
+        edit: Edit this appointment
+        delete: Remove this appointment forever
+  appointments:
+    show:
+      other: Other Appointments
