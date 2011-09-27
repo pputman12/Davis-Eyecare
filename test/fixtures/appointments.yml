@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  reason: MyString
+  first_date: 2011-09-27 14:47:25
+  second_date: 2011-09-27 14:47:25
+  comments: MyText
+  reordercontacts: false
+  shipping_name: MyString
+  shipping_address: MyString
+  shipping_phone: MyString
+  shipping_email: MyString
+  quantity: 1
+
+two:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  reason: MyString
+  first_date: 2011-09-27 14:47:25
+  second_date: 2011-09-27 14:47:25
+  comments: MyText
+  reordercontacts: false
+  shipping_name: MyString
+  shipping_address: MyString
+  shipping_phone: MyString
+  shipping_email: MyString
+  quantity: 1
