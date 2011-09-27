@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @appointment.name %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @appointment.phone_number %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @appointment.email %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @appointment.reason %>
+</p>
+
+<p>
+  <b>First date:</b>
+  <%= @appointment.first_date %>
+</p>
+
+<p>
+  <b>Second date:</b>
+  <%= @appointment.second_date %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @appointment.comments %>
+</p>
+
+<p>
+  <b>Reordercontacts:</b>
+  <%= @appointment.reordercontacts %>
+</p>
+
+<p>
+  <b>Shipping name:</b>
+  <%= @appointment.shipping_name %>
+</p>
+
+<p>
+  <b>Shipping address:</b>
+  <%= @appointment.shipping_address %>
+</p>
+
+<p>
+  <b>Shipping phone:</b>
+  <%= @appointment.shipping_phone %>
+</p>
+
+<p>
+  <b>Shipping email:</b>
+  <%= @appointment.shipping_email %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @appointment.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>
