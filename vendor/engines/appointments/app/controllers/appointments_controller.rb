@@ -12,4 +12,8 @@ class AppointmentsController < ApplicationController
       render :new
     end
   end
+  
+  def show
+    @appointment = Appointment.find(params[:id])
+  end
 end

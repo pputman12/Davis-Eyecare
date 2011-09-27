@@ -1,5 +1,5 @@
 ::Refinery::Application.routes.draw do
-  resources :appointments, :only => [:new, :create]
+  resources :appointments, :only => [:new, :create, :show]
   
   scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
     resources :appointments do
