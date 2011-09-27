@@ -1,6 +1,4 @@
 DavisEyecare::Application.routes.draw do  
-  resources :appointments
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
